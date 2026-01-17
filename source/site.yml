@@ -1,0 +1,47 @@
+site:
+  # set the domain with schema but without trailing slash:
+  domain: 'https://huanying001.top'
+  title: 幻影001的博客
+  description: 这里是幻影001
+  keywords: 交易, 编程, 游戏
+  theme: default
+  language: zh-CN
+  # set the /<rootPath> pathname under which your site is served
+  # for GitHub pages deployment without a custom domain, it is often '/<projectName>'
+  # root-path: /gitsite
+  # set cdn path:
+  cdn-path: https://cdn.jsdelivr.net/npm
+  navigation:
+    - title: 博客
+      uri: /blogs/all/index.html
+  git:
+    base-url: https://github.com/MChuanying001/huanying001.top/blob/main/source
+  contact:
+    name: 幻影001
+    github: https://github.com/MChuanying001/huanying001.top
+    twitter: https://twitter.com/huanying001
+  books:
+    index-marker: true
+  search:
+    # none = no search
+    # browser = flex search in browser
+    # google = google site search
+    type: browser
+  # control styles:
+  styles:
+    # show 'Edit in Git':
+    display-git-link: true
+    # any custom styles used in theme:
+    # code-font: Monaco
+  integration:
+    abcjs:
+      disable: false
+
+build:
+  # copy special files under root dir (ignore if not found):
+  copy:
+    - favicon.ico
+    - robots.txt
+    - ads.txt
+
+# you can add any items:
